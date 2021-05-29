@@ -3,7 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="register.css" media="screen"/>
-    <title>Registration</title>
+    <title>Registration</title>    
+    <script>   
+        function Register()
+        {
+            var name = document.getElementById("name").value;
+            var surname = document.getElementById("surname").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var address = document.getElementById("address").value;
+            Monkey.Register(name,surname,email,password,address);
+        }
+    </scipt>
 </head>
 <body>
             <form>
