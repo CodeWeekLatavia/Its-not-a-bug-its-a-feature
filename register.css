@@ -73,6 +73,7 @@ li {
     font-size: 50px;
     border-radius: 10px;
 }
-input.radioBtn{
-    display: inline;
+ul input {
+    width: 70px;
+    margin: 10px;
 }
