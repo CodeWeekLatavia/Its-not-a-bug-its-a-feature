@@ -7,21 +7,38 @@
     <script>
         function SaveUserData()
         {
-            //TODO
+            var name = document.getElementById("name").value;
+            var surname = document.getElementById("surname").value;
+            var mail = document.getElementById("mail").value;
+            var city = document.getElementById("city").value;
+            var about = document.getElementById("about").value;
+            var interests = document.getElementById("interests").value;
+            var isWorker = document.getElementById("radio2").checked
+            
+            Monkey.SaveUserData(name,surname,mail,city,about,interests,isWorker);
+            
         }
         
-        function onProfileDataResult(finishReg,name,surname,mail,city,about,interests,isWorker)
+        function onProfileDataResult(name,surname,mail,city,about,interests,isWorker)
         {
-            document.getElementById('name').setAttribute("type", "hidden");
-            if(finishReg)
+            document.getElementById("name").value = name;
+            document.getElementById("surname").value = surname;
+            document.getElementById("mail").value = mail;
+            document.getElementById("city").value = city;
+            document.getElementById("info").value = about;
+            document.getElementById("interests").value = interests;
+            
+            if(isWorker)  
             {
-                
+                document.getElementById("radio2").checked = true;
+                document.getElementById("radio1").checked = false;
             }
             else
             {
-                
+                document.getElementById("radio2").checked = false;
+                document.getElementById("radio1").checked = true;
             }
-             
+              
         }
     </script>
 </head>
