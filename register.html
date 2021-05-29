@@ -4,17 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="register.css" media="screen"/>
     <title>Registration</title>    
-    <script>   
-        function Register()
-        {
-            var name = document.getElementById("name").value;
-            var surname = document.getElementById("surname").value;
-            var email = document.getElementById("email").value;
-            var password = document.getElementById("password").value;
-            var address = document.getElementById("address").value;
-            Monkey.Register(name,surname,email,password,address);
-        }
-    </scipt>
+
 </head>
 <body>
             <form>
@@ -25,8 +15,20 @@
                     <input type="email" id="mail" placeholder="Email"/>
                     <input type="password" id="password" placeholder="Password"/>
                     <input type="text" id="address" placeholder="Address"/>
-                    <input class="button" id="butt" type="submit" value="Register"/>
+                    <input class="button" onclick ="Register();return false;" id="butt" type="submit" value="Register"/>
                 </div>
             </form>
+    
+     <script>   
+        function Register()
+        {
+            var name = document.getElementById("name").value;
+            var surname = document.getElementById("surname").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var address = document.getElementById("address").value;
+            Monkey.Register(name,surname,email,password,address);
+        }
+    </scipt>
 </body>
 </html>
