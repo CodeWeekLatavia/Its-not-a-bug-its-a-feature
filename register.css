@@ -41,17 +41,35 @@ ul {
     width: 80%;
     display: flex;
     flex-flow: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
 	align-items: center;
     font-size: 50px;
 }
 li {
     list-style-type: none;
-     display: flex;
+    display: flex;
     flex-flow: row;
 	align-items: center;
 }
-ul input {
-    width: 70px;
-    margin: 10px;
+#butt{
+    cursor: pointer;
+    background-color: black;
+    border: none;
+    color: white;
+    font-weight:700;
+    width: 230px;
+    height: 90px;
+    font-size: 50px;
+    border-radius: 10px;
+}
+#butt2{
+    cursor: pointer;
+    background-color: white;
+    border: 6px solid black;
+    color: black;
+    font-weight:700;
+    width: 230px;
+    height: 90px;
+    font-size: 50px;
+    border-radius: 10px;
 }
