@@ -17,8 +17,9 @@
             var email = document.getElementById("mail").value;            
             var city = document.getElementById("city").value;
             var isWorker = document.getElementById("radio2").checked;
+            var isEmployer = document.getElementById("radio1").checked;
             
-            if (pass0 != "" && pass1 != ""  && name != "" && surname != ""  && email != "" && city != "")
+            if (pass0 != "" && pass1 != ""  && name != "" && surname != ""  && email != "" && city != "" && isWorker != isEmployer)
             {
                 if (pass0 == pass1)
                 {
