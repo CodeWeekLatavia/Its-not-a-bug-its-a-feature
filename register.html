@@ -4,22 +4,29 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="register.css" media="screen"/>
     <title>Registration</title>
-    <script>   
+    <script>
+        
+        
+        
         function Register()
         {
             var pass0 = document.getElementById("pass").value;
             var pass1 = document.getElementById("confirm_pass").value;
+            var name = document.getElementById("name").value;
+            var surname = document.getElementById("surname").value;
+            var email = document.getElementById("mail").value;            
+            var city = document.getElementById("city").value;
+            var isWorker = document.getElementById("radio2").checked;
             
-            if (pass0 == pass1)
+            if (pass0 != "" && pass1 != ""  && name != "" && surname != ""  && email != "" && city != "")
             {
-                var name = document.getElementById("name").value;
-                var surname = document.getElementById("surname").value;
-                var email = document.getElementById("mail").value;            
-                var city = document.getElementById("city").value;
-                var isWorker = document.getElementById("radio2").checked;
-                Monkey.Register(name, surname, email, pass0, city, isWorker);
+                if (pass0 == pass1)
+                {
+                    Monkey.Register(name, surname, email, pass0, city, isWorker);
+                }
+                else Monkey.Warn("Error", "Passwords are not the same");
             }
-            else Monkey.Warn("Error", "Passwords are not the same");
+            else Monkey.Warn("Error", "One of the fields is empyty");
         }
     </script>
 </head>
