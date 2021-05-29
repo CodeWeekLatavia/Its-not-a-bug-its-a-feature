@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+form {
+    width: 80%;
+    height: 1800px;
+    margin: auto;
+    margin-top: 100px;
+    border: 3px solid black;
+    border-radius: 30px;
+}
+.formFlex {
+    height: 100%;
+	width: 100%;
+	display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+	align-items: center;
+	color: black;
+}
+h1 {
+    font-size: 70px;
+}
+input {
+    width: 80%;
+    height: 90px;
+    font-size: 50px;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+.button {
+    cursor: pointer;
+    background-color: black;
+    border: none;
+    color: white;
+    font-weight:700;
+}
+ul {
+    height: 90px;
+    width: 80%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+	align-items: center;
+    font-size: 50px;
+}
+li {
+    list-style-type: none;
+     display: flex;
+    flex-flow: row;
+	align-items: center;
+}
+ul input {
+    width: 70px;
+    margin: 10px;
+}
+textarea {
+    width: 80%;
+    height: 700px;
+    resize: vertical;
+    font-size: 50px;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+.buttons {
+    height: 90px;
+    width: 80%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+	align-items: center;
+    font-size: 50px;
+}
+.buttons li {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row;
+	align-items: center;
+}
+#butt{
+    cursor: pointer;
+    background-color: black;
+    border: none;
+    color: white;
+    font-weight:700;
+    width: 230px;
+    height: 90px;
+    font-size: 50px;
+    border-radius: 10px;
+}
+#butt2{
+    cursor: pointer;
+    background-color: white;
+    border: 6px solid black;
+    color: black;
+    font-weight:700;
+    width: 230px;
+    height: 90px;
+    font-size: 50px;
+    border-radius: 10px;
+}

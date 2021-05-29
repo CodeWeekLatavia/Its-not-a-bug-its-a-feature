@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="profile.css" media="screen"/>
+    <title>Edit Profile</title>
+</head>
+<body>
+    <form>
+        <div class="formFlex">
+            <h1>Edit Profile</h1>
+            <input maxlength='30' type="text" id="name" placeholder="Name"/>
+            <input maxlength='30' type="text" id="surname" placeholder="Surname"/>
+            <input maxlength='50' type="email" id="mail" placeholder="Email"/>
+            <input  maxlength='40' type="text" id="city" placeholder="Town"/>
+            <textarea maxlength='1500' placeholder="Information about you"></textarea>
+            <ul>
+                <li><lable>Employer</lable><input type="radio" id="radio1" name="position"/></li>
+                <li><lable>Worker</lable><input id="radio2" type="radio" name="position"/></li>
+            </ul>
+            <ul class="buttons">
+                <li><button id="butt">Save</button></li>
+                <li><button id="butt2">Back</button></li>
+            </ul>
+        </div>
+    </form>
+</body>
+</html>
