@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="profile.css" media="screen"/>
-    <title>Edit Profile</title>
+    <title id="title">Edit Profile</title>
+    <script>
+        function SaveUserData()
+        {
+            //TODO
+        }
+    </script>
 </head>
 <body>
     <form>
@@ -13,14 +19,15 @@
             <input maxlength='30' type="text" id="surname" placeholder="Surname"/>
             <input maxlength='50' type="email" id="mail" placeholder="Email"/>
             <input  maxlength='40' type="text" id="city" placeholder="Town"/>
-            <textarea maxlength='1500' placeholder="Information about you"></textarea>
+            <textarea maxlength='1500' id="info" placeholder="Information about you"></textarea>
+            <textarea maxlength='1500' id="interests" placeholder="Interests (one per line)"></textarea>
             <ul>
                 <li><lable>Employer</lable><input type="radio" id="radio1" name="position"/></li>
                 <li><lable>Worker</lable><input id="radio2" type="radio" name="position"/></li>
             </ul>
             <ul class="buttons">
-                <li><button id="butt">Save</button></li>
-                <li><button id="butt2">Back</button></li>
+                <li><button onclick="SaveUserData(); return false;" id="butt">Save</button></li>
+                <li><button onclick="window.history.back(); return false;" id="butt2">Back</button></li>
             </ul>
         </div>
     </form>
