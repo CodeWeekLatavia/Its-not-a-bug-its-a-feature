@@ -29,10 +29,40 @@ input {
     border-radius: 10px;
     border: 3px solid black;
 }
-.button {
+ul {
+    height: 90px;
+    width: 80%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+	align-items: center;
+    font-size: 50px;
+}
+li {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row;
+	align-items: center;
+}
+#butt{
     cursor: pointer;
     background-color: black;
     border: none;
     color: white;
     font-weight:700;
+    width: 230px;
+    height: 90px;
+    font-size: 50px;
+    border-radius: 10px;
+}
+#butt2{
+    cursor: pointer;
+    background-color: white;
+    border: 6px solid black;
+    color: black;
+    font-weight:700;
+    width: 230px;
+    height: 90px;
+    font-size: 50px;
+    border-radius: 10px;
 }
