@@ -12,6 +12,7 @@
             var email = document.getElementById("mail").value;
             var password = document.getElementById("pass").value;
             var address = document.getElementById("address").value;
+            //TODO: radio buttons
             Monkey.Register(name,surname,email,password,address);
         }
     </script>
@@ -29,7 +30,7 @@
                         <li><lable>Boss</lable><input type="radio" id="radio1" name="position"/></li>
                         <li><lable>Worker</lable><input id="radio2" type="radio" name="position"/></li>
                     </ul>
-                    <input class="button" type="submit" onclick="Register(); return false;" value="Register"/>
+                    <input class="button" type="button" onclick="Register(); return false;" value="Register"/>
                 </div>
             </form>
 </body>
