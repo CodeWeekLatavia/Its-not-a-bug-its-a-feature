@@ -3,15 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="login.css" media="screen"/>
-    <title>Log in</title>
-    <script>
-    function Login()
-    {
-    	var email = document.getElementById("mail").value;
-        var pass = document.getElementById("password").value;
-        Monkey.Login(email,pass);
-    }
-    </script>
+    <title>Log In</title>
 </head>
 <body>
             <form>
@@ -19,7 +11,7 @@
                     <h1>Log In</h1>
                     <input type="email" id="mail" placeholder="Email"/>
                     <input type="password" id="password" placeholder="Password"/>
-                    <input class="button" type="button" onclick="Login();return false;" value="Login"/>
+                    <input class="button" id="butt" type="submit" value="Log In"/>
                 </div>
             </form>
 </body>
