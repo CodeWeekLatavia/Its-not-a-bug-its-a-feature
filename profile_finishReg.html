@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="profile.css" media="screen"/>
+    <title id="title">Let's get to know you</title>
+    <script>
+        function SaveUserData()
+        {
+            var info = document.getElementById("info").value;
+            var interests = document.getElementById("interests").value;
+            Monkey.FinishRegistration(info,interests);
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <div class="formFlex">
+            <h1>Let's get to know you</h1>
+            <textarea maxlength='1500' id="info" placeholder="Information about you"></textarea>
+            <textarea maxlength='1500' id="interests" placeholder="Interests (one per line)"></textarea>
+            <ul class="buttons">
+                <li><button onclick="SaveUserData(); return false;" id="butt">Save</button></li>
+            </ul>
+        </div>
+    </form>
+</body>
+</html>
