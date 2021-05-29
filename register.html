@@ -4,16 +4,42 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="register.css" media="screen"/>
     <title>Registration</title>
+    <script>   
+        function Register()
+        {
+            var pass0 = document.getElementById("pass").value;
+            var pass1 = document.getElementById("confirm_pass").value;
+            
+            if (pass0 == pass1)
+            {
+                var name = document.getElementById("name").value;
+                var surname = document.getElementById("surname").value;
+                var email = document.getElementById("mail").value;            
+                var city = document.getElementById("city").value;
+                var isWorker = document.getElementById("radio2").checked;
+                Monkey.Register(name, surname, email, pass0, city, isWorker);
+            }
+            else Monkey.Warn("Error","Passwords are not the same");
+        }
+    </script>
 </head>
 <body>
             <form>
                 <div class="formFlex">
                     <h1>Registration</h1>
+                    <input id="name" placeholder="Name"/>
+                    <input id="surname" placeholder="Surname"/>
                     <input type="email" id="mail" placeholder="Email"/>
-                    <input type="password" id="password" placeholder="Password"/>
+                    <input id="city" placeholder="Town"/>
+                    <input type="password" id="pass" placeholder="Password"/>
+                    <input type="password" id="confirm_pass" placeholder="Confirm Password"/>
                     <ul>
-                        <li><button id="butt">Register</button></li>
-                        <li><button id="butt2">Back</button></li>
+                        <li><lable>Employer</lable><input id="radio1" type="radio" name="position"/></li>
+                        <li><lable>Worker</lable><input id="radio2" type="radio" name="position"/></li>
+                    </ul>
+                    <ul>
+                        <li><button onclick="Register(); return false;" id="butt">Register</button></li>
+                        <li><button onclick="window.history.back(); return false;" id="butt2">Back</button></li>
                     </ul>
                 </div>
             </form>
