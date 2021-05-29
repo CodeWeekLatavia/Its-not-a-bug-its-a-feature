@@ -9,8 +9,8 @@
         {
             var name = document.getElementById("name").value;
             var surname = document.getElementById("surname").value;
-            var email = document.getElementById("email").value;
-            var password = document.getElementById("password").value;
+            var email = document.getElementById("mail").value;
+            var password = document.getElementById("pass").value;
             var address = document.getElementById("address").value;
             Monkey.Register(name,surname,email,password,address);
         }
@@ -23,8 +23,8 @@
                     <input type="text" id="name" placeholder="Name"/>
                     <input type="text" id="surname" placeholder="Surname"/>
                     <input type="email" id="mail" placeholder="Email"/>
-                    <input type="password" id="password" placeholder="Password"/>
-                    <input type="text" id="adress" placeholder="Adress"/>
+                    <input type="password" id="pass" placeholder="Password"/>
+                    <input type="text" id="address" placeholder="Address"/>
                     <ul>
                         <li><lable>Boss</lable><input type="radio" id="radio1" name="position"/></li>
                         <li><lable>Worker</lable><input id="radio2" type="radio" name="position"/></li>
