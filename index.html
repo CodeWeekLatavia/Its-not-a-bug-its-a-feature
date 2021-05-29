@@ -4,13 +4,28 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
     <title>Document</title>
+    <script>
+        function onLoggedInResult(loggedIn)
+        {
+            if(!loggedIn)
+            {
+                document.getElementById('profile').style.display = "none"; 
+                document.getElementById('start').style.display = "none"; 
+            }
+            else
+            {
+                document.getElementById('login').innerHTML = ""; 
+                document.getElementById('reg'). = ""; 
+            }
+        }
+    </script>
 </head>
 <body>
     <nav>
         <ul>
-            <li><a href="login">Log In</a></li>
+            <li><a id="login" href="login">Log In</a></li>
             <li>Logo</li>
-            <li><a href="register">Register</a></li>
+            <li><a id="reg" href="register">Register</a></li>
         </ul>
     </nav>
 
