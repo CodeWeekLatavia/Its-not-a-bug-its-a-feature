@@ -32,3 +32,22 @@ input {
 .button {
     cursor: pointer;
 }
+ul {
+    height: 90px;
+    width: 80%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+	align-items: center;
+    font-size: 50px;
+}
+li {
+    list-style-type: none;
+     display: flex;
+    flex-flow: row;
+	align-items: center;
+}
+ul input {
+    width: 70px;
+    margin: 10px;
+}
