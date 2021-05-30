@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="offer.css" media="screen"/>
     <title>Offer</title>
+    <script>
+        function onJobOfferResult(description,location,pay,base64Image)
+        {
+            document.getElementById("desc").value = description;
+            document.getElementById("city").value = location;
+            document.getElementById("money").value = pay;
+            document.getElementById("image").src = base64Image;
+        }
+    </script>
 </head>
 <body>
     <form>
@@ -16,7 +25,7 @@
                     <path d="m352.214844 390.171875v-224c0-4.417969 3.582031-8 8-8h56.210937l-69.011719-52.34375c-2.011718-1.511719-3.199218-3.882813-3.199218-6.398437v-61.257813h-32v24.800781c0 3.03125-1.710938 5.800782-4.421875 7.15625-2.710938 1.355469-5.953125 1.0625-8.378907-.757812l-91.199218-69.160156-208.214844 157.960937h56.214844c4.417968 0 8 3.582031 8 8v224h96v-104c0-4.417969 3.582031-8 8-8h80c4.417968 0 8 3.582031 8 8v104zm-224-144c0 4.417969-3.582032 8-8 8h-32c-4.417969 0-8-3.582031-8-8v-48c0-4.417969 3.582031-8 8-8h32c4.417968 0 8 3.582031 8 8zm0 0"/>
                     <path d="m176.214844 294.171875h64v96h-64zm0 0"/>
                 </svg>
-                <input class="townMony" maxlength='40' type="text" id="city" placeholder="Town"/>
+                <input class="townMony" maxlength='40' type="text" id="city"/>
             </li>
             <li class="info">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15pt" height="15pt" viewBox="0 0 15 15" version="1.1">
@@ -26,9 +35,9 @@
                     <path d="M 5 7.855469 C 5.140625 7.855469 5.28125 7.855469 5.417969 7.847656 C 5.640625 7.304688 5.945312 6.800781 6.3125 6.355469 C 5.886719 6.402344 5.445312 6.429688 5 6.429688 C 3.363281 6.429688 1.816406 6.105469 0.640625 5.515625 C 0.40625 5.402344 0.195312 5.277344 0 5.144531 L 0 5.714844 C 0 6.726562 2.136719 7.855469 5 7.855469 Z M 5 7.855469 "/>
                     <path d="M 7.144531 7.632812 C 6.832031 8.097656 6.613281 8.625 6.503906 9.191406 C 6.453125 9.453125 6.425781 9.722656 6.425781 10 C 6.425781 10.207031 6.441406 10.410156 6.472656 10.609375 C 6.542969 11.101562 6.695312 11.566406 6.917969 11.988281 C 7.152344 12.429688 7.460938 12.828125 7.824219 13.164062 C 8.589844 13.859375 9.601562 14.285156 10.714844 14.285156 C 13.078125 14.285156 15 12.363281 15 10 C 15 7.636719 13.078125 5.714844 10.714844 5.714844 C 10.46875 5.714844 10.230469 5.734375 9.996094 5.773438 C 8.808594 5.972656 7.785156 6.664062 7.144531 7.632812 Z M 7.144531 7.632812 "/>
                 </svg>
-                <input class="townMony" maxlength='10' type="text" id="money" placeholder="Money"/>
+                <input class="townMony" type="text" id="money"/>
             </li>
-            <textarea maxlength='1500' placeholder="Information about you"></textarea>
+            <textarea id="desc" ></textarea>
             <ul class="buttons">
                 <li><button id="butt">Accept</button></li>
                 <li><button id="butt2">Next</button></li>
