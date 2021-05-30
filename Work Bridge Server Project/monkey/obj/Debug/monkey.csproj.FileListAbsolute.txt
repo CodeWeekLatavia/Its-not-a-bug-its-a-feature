@@ -1,0 +1,9 @@
+D:\repos\monkey\monkey\bin\Debug\monkey.exe.config
+D:\repos\monkey\monkey\bin\Debug\monkey.exe
+D:\repos\monkey\monkey\bin\Debug\monkey.pdb
+D:\repos\monkey\monkey\bin\Debug\Newtonsoft.Json.dll
+D:\repos\monkey\monkey\bin\Debug\Newtonsoft.Json.xml
+D:\repos\monkey\monkey\obj\Debug\monkey.csprojAssemblyReference.cache
+D:\repos\monkey\monkey\obj\Debug\monkey.csproj.CopyComplete
+D:\repos\monkey\monkey\obj\Debug\monkey.exe
+D:\repos\monkey\monkey\obj\Debug\monkey.pdb
