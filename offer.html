@@ -7,9 +7,9 @@
     <script>
         function onJobOfferResult(description,location,pay,base64Image)
         {
-            document.getElementById("desc").value = description;
-            document.getElementById("city").value = location;
-            document.getElementById("money").value = pay;
+            document.getElementById("desc").innerHTML = description;
+            document.getElementById("city").innerHTML = location;
+            document.getElementById("money").innerHTML = pay;
             document.getElementById("image").src = base64Image;
         }
         
