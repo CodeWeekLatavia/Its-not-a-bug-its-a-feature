@@ -15,8 +15,11 @@
             var interests = document.getElementById("interests").value;
             var isWorker = document.getElementById("radio2").checked
             
-            Monkey.SaveUserData(name,surname,mail,city,about,interests,isWorker);
-            
+            if (name != "" && surname != ""  && mail != "" && city != "")
+            {
+                Monkey.SaveUserData(name,surname,mail,city,about,interests,isWorker);
+            }
+            else Monkey.Warn("Error", "One of the needed fields is empyty");
         }
         
         function onProfileDataResult(name,surname,mail,city,about,interests,isWorker)
