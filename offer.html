@@ -5,12 +5,11 @@
     <link rel="stylesheet" type="text/css" href="offer.css" media="screen"/>
     <title>Offer</title>
     <script>
-        function onJobOfferResult(description,location,pay,base64Image)
+        function onJobOfferResult(description,location,pay)
         {
             document.getElementById("desc").value = description;
             document.getElementById("city").value = location;
             document.getElementById("money").value = pay;
-            document.getElementById("image").src = base64Image;
         }
     </script>
 </head>
